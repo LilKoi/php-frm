@@ -1,17 +1,17 @@
 <?php
 
 return [
-	'all' => [
-		//
-	],
-	'authorize' => [
-		//
-	],
-	'guest' => [
-		'register',
-		'login',
-	],
-	'admin' => [
-		//
-	],
+    'all' => [
+        //
+    ],
+    'authorize' => [
+        //
+    ],
+    'guest' => [
+        'register',
+        'login',
+    ],
+    'admin' => [
+        //
+    ],
 ];

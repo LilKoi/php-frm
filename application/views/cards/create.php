@@ -1,5 +1,5 @@
 <?php
-include "application/views/general/admin/header.php";
+require "application/views/general/admin/header.php";
 ?>
     <section>
         <div class="container">
@@ -65,5 +65,5 @@ include "application/views/general/admin/header.php";
         </div>
     </section>
     <?php
-include "application/views/general/footer.php";
-?>
+    require "application/views/general/footer.php";
+    ?>

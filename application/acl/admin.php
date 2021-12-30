@@ -1,18 +1,18 @@
 <?php
 
 return [
-	'all' => [
-		'index',
+    'all' => [
+        'index',
         "create",
-		'store'
-	],
-	'authorize' => [
-		//
-	],
-	'guest' => [
-		//
-	],
-	'admin' => [
-		//
-	],
+        'store'
+    ],
+    'authorize' => [
+        //
+    ],
+    'guest' => [
+        //
+    ],
+    'admin' => [
+        //
+    ],
 ];
