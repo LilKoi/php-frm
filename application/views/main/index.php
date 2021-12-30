@@ -47,7 +47,7 @@ require "application/views/general/header.php";
                         <p>Цена: <?php echo $card["price"];?><</p>
                         <span>Товар в наличии</span>
                     </div>
-                    <?php endforeach ?>
+                <?php endforeach ?>
                 </div>
             </div>
             <div class="now-catalog">
@@ -60,7 +60,7 @@ require "application/views/general/header.php";
                         <p>Цена: <?php echo $card["price"];?><</p>
                         <span>Товар в наличии</span>
                     </div>
-                    <?php endforeach ?>
+                <?php endforeach ?>
                 </div>
             </div>
         </div>
