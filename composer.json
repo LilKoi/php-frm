@@ -1,0 +1,12 @@
+{
+    "require": {
+        "gabordemooij/redbean": "^5.7",
+        "illuminate/events": "^8.77",
+        "illuminate/database": "^8.77"
+    },
+    "autoload": {
+        "psr-4": {
+            "application\\": "application"
+        }
+    }
+}

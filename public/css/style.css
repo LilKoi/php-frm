@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    align-items: center;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    padding-top: 50px;
+}
+
+header .container {
+    border: 1px solid black;
+}
+
+.logo-container{
+    margin: 20px 0;
+    padding-left: 20px;
+    align-items: center;
+    display: flex;
+}
+
+.logo-container i{
+    font-size: 55px;
+    margin-right: 10px;
+}
+
+.logo-container h1{
+    font-family: 'Arial Bold';
+}
+
+.header-auth a{
+    text-decoration: none;
+    color: black;
+}
+
+.header-auth a:hover{
+    color: blue;
+}
+
+.cart {
+    margin-right: 20px;
+    font-size: 55px;
+}
+
+.menu ul{
+    margin-top: 20px;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu ul li  {
+    display:inline;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+   
+.menu ul li:first-child {
+    border:none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: blue;
+    padding:0 30px;
+}
+
+.menu ul li:last-child {
+    border:none;
+}
+
+.category h1{
+    font-size: 35px;
+    margin: 50px 0
+}
+
+.category .container{
+    flex-direction: column;
+}
+
+.category-list {
+    display: flex;
+}
+
+.category-list .ctg{
+    width: 25%;
+    display: flex;
+    padding: 20px 20px 40px 20px;
+    border: 1px solid black;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.category-list img {
+    width: 250px;
+    height: 300px;
+}
+
+.now-catalog {
+    align-items: center;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.now-catalog h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.catalogs {
+    align-items: center;
+    flex-wrap: wrap;
+    width: 600px;
+    display: flex;
+}
+
+.catalog-cart {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 40px 20px;
+    border: 1px solid black;
+    width: 250px;
+    display: flex;
+}
+
+.catalog-cart img{
+    width: 250px;
+    height: 300px;
+}
+
+.catalog-cart p{
+    margin: 5px;
+}
+
+.catalog {
+    margin-top: 100px;
+}
+
+
+footer .container {
+    margin-top: 50px;
+    border: 1px solid black;
+}
+
+footer h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:100;
+    padding: 40px;
+}
