@@ -148,6 +148,9 @@ header .container {
     margin-top: 100px;
 }
 
+footer {
+    padding-bottom: 50px;
+}
 
 footer .container {
     margin-top: 50px;
@@ -158,4 +161,110 @@ footer h4{
     font-family: Arial, Helvetica, sans-serif;
     font-weight:100;
     padding: 40px;
+}
+
+.input {
+    align-items: center;
+    margin: 10px 0;
+    justify-content: space-between;
+    width: 400px;
+    display: flex;
+}
+
+.input input {
+    width: 50%;
+}
+
+.input textarea {
+    height: 50px;
+    width: 50%;
+}
+
+.input h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.faqs {
+    margin-top: 50px;
+    margin-bottom: 75px;
+}
+
+.faq-logo {
+    margin-top: 50px;
+    max-width: 100%;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faqs-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-card {
+    padding: 20px;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    border: 1px solid black;
+}
+
+.faq-question {
+    margin: 20px 0;
+    align-items: center;
+    display: flex;
+}
+
+.faq-question i {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.faq-question p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;    
+}
+
+.faq-question h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;    
+}
+
+.category-logo h1{
+    margin: 25px 0;
+}
+
+.ctg-card {
+    width: 33.166%;
+    display: flex;
+    padding: 20px 0;
+    border: 1px solid black;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ctg-card img {
+        width: 250px;
+        height: 300px;
+}
+
+.ctg-card-list {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.ctg-sort {
+    justify-content: flex-end;
+    display: flex;
+    padding: 20px;
+}
+
+.ctg-card-list-main {
+    display: flex;
+    flex-wrap: wrap;
 }

@@ -11,15 +11,6 @@ abstract class Controller
     public $view;
     public $acl;
 
-    public function __construct($route)
-    {
-        $this->route = $route;
-        if (!$this->checkAcl()) {
-            View::errorCode(403);
-        }
-        $this->view = new View($route);
-        // $this->model = $this->loadModel($route['controller']);
-    }
 
     public function loadModel($name)
     {
@@ -52,4 +43,12 @@ abstract class Controller
         return in_array($this->route['action'], $this->acl[$key]);
     }
 
+    public function setRount($route)
+    {
+        $this->route = $route;
+        if (!$this->checkAcl()) {
+            View::errorCode(403);
+        }
+        $this->view = new View($route);
+    }
 }

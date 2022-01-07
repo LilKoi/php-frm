@@ -18,8 +18,8 @@
     <section class="menu">
         <div class="container">
             <ul>
-                <li><a href="">Все товары</a></li>
-                <li><a href="">Все категории товаров</a></li>
+                <li><a href="/admin/cards">Все товары</a></li>
+                <li><a href="/admin/category">Все категории товаров</a></li>
                 <li><a href="">Популярные категории товаров</a></li>
                 <li><a href="">Новинки в каталоге</a></li>
                 <li><a href="">Популярные товары</a></li>

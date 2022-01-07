@@ -4,13 +4,15 @@ namespace application\models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class Faq extends Model
 {
-    protected $table = "users";
+    protected $table = "faqs";
 
     protected $fillable = [
-        "email",
+        'question',
+        'answer',
         "name",
-        "password",
+        "email",
+        "phone"
     ];
 }

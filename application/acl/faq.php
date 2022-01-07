@@ -2,6 +2,8 @@
 
 return [
     'all' => [
+        'index',
+        "store"
     ],
     'authorize' => [
         //
@@ -10,12 +12,6 @@ return [
         //
     ],
     'admin' => [
-        'index',
-        "create",
-        'store',
-        "admin",
-        "delete",
-        "edit",
-        "update"
+        //
     ],
 ];

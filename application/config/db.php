@@ -2,7 +2,7 @@
 
 return [
     'host' => '127.0.0.1',
-    'name' => 'test',
-    'user' => 'gasaichan',
-    'password' => 'novata1998',
+    'name' => 'sergei',
+    'user' => 'root',
+    'password' => '',
 ];

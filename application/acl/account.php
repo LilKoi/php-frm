@@ -2,14 +2,15 @@
 
 return [
     'all' => [
-        //
+        'register',
+        'login',
+        'create',
+        'logAuth'
     ],
     'authorize' => [
         //
     ],
     'guest' => [
-        'register',
-        'login',
     ],
     'admin' => [
         //

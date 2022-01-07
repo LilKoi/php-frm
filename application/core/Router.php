@@ -26,7 +26,7 @@ class Router
 
     public function match()
     {
-        $url = trim($_SERVER['REQUEST_URI'], '/');
+        $url = strtok(trim($_SERVER['REQUEST_URI'], '/'),"?");
         foreach ($this->routes as $route => $params) {
             if (preg_match($route, $url, $matches)) {
                 $this->params = $params;
@@ -45,10 +45,15 @@ class Router
                 if (method_exists($path, $action)) {
                     $reflectedController = new \ReflectionClass($path);
                     $arguments = [];
+                    if(!is_null($reflectedController->getConstructor())){
                     foreach ($reflectedController->getConstructor()->getParameters() as $argument) {
                         $arguments[] = new ((string)$argument->getType());
                     }
                     $controller = new $path(...$arguments);
+                    }else {
+                        $controller = new $path();
+                    }
+                    $controller->setRount($this->params);
                     $controller->$action();
                 } else {
                     View::errorCode(404);

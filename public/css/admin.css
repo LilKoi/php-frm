@@ -75,3 +75,75 @@ footer h4{
     font-weight:100;
     padding: 40px;
 }
+
+.input img {
+    width: 250px;
+    height: 300px;
+}
+
+.admin-category-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.admin-category {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.admin-category h4{
+    width: 25%;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+}
+
+.admin-category .ctg-delete {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 50px;
+    align-items: center;
+    text-align: center;
+    line-height:50px;
+    border-radius: 50%;
+    background: grey;
+    text-decoration: none;
+    display:inline-block;
+}
+
+.admin-category .ctg-edit {
+    border: 1px solid grey;
+    background: grey;
+    color: black;
+    text-decoration: none;
+}
+
+.admin-cards table {
+    margin: auto;
+    margin-top: 75px;
+}
+
+.admin-cards table td {
+    width: 200px;
+    padding: 10px 0;
+    border: 1px solid black;
+}
+
+.admin-cards-delete {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+    background: grey;
+    text-decoration: none;
+    display:inline-block;
+}

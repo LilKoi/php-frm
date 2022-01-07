@@ -1,17 +1,6 @@
 <?php
 require "application/views/general/header.php";
 ?>
-    <section class="menu">
-        <div class="container">
-            <ul>
-                <li><a href="">О нас</a></li>
-                <li><a href="">Доставка и оплата</a></li>
-                <li><a href="">Контакты</a></li>
-                <li><a href="">Вопросы и ответы</a></li>
-                <li><a href="">Обмен и возврат</a></li>
-            </ul>
-        </div>
-    </section>
     <section class="category">
         <div class="container">
             <h1>Популярные категории товаров</h1>
@@ -51,7 +40,7 @@ require "application/views/general/header.php";
                 </div>
             </div>
             <div class="now-catalog">
-                <h1>Новинки в каталоге</h1>
+                <h1>Популярные товары</h1>
                 <div class="catalogs">
                 <?php foreach($nows as $card): ?>
                     <div class="catalog-cart">

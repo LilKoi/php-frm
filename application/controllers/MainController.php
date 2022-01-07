@@ -7,12 +7,15 @@ use application\models\Card;
 use application\lib\Db;
 class MainController extends Controller
 {
+    protected Card $card;
+    public function __construct(Card $card)
+    {
+        $this->card = $card;
+    }
 
     public function indexAction()
     {
-        $db = new Db();
-        $db = $db->connection();
-        $nows = $db->table("cards")->orderBy('id', 'desc')->take(4)->get();
+        $nows = $this->card->orderBy('id', 'desc')->take(4)->get();
         $vars = [
         "nows" => $nows
         ];

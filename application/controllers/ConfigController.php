@@ -3,19 +3,14 @@
 namespace application\controllers;
 
 use application\core\Controller;
-use Illuminate\Database\Capsule\Manager as Capsule;
-use application\lib\Db;
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Capsule\Manager;
 class ConfigController extends Controller
 {
-    protected $db;
 
-    public function __construct()
-    {
-        $this->db = new Db();
-    }
     public function databaseAction()
     {
-        $this->db->connection()->schema()->create(
+        Manager::schema()->create(
             'users', function ($table) {
                 $table->increments('id');
                 $table->string('email')->unique();
@@ -25,9 +20,10 @@ class ConfigController extends Controller
                 $table->softDeletes();
             }
         );
-        $this->db->connection()->schema()->create(
+        Manager::schema()->create(
             "cards", function ($table) {
                 $table->increments('id');
+                $table->string("name"); 
                 $table->integer("category_id");
                 $table->string("brand");
                 $table->string("compound"); //состав
@@ -35,10 +31,10 @@ class ConfigController extends Controller
                 $table->string("quality"); //качество
                 $table->string("manufacturer"); //производитель
                 $table->string("design");
-                $table->boolean("s");
-                $table->boolean("m");
-                $table->boolean("l");
-                $table->boolean("xl");
+                $table->boolean("s")->default(0);
+                $table->boolean("m")->default(0);
+                $table->boolean("l")->default(0);
+                $table->boolean("xl")->default(0);
                 $table->text("description");
                 $table->integer("price");
                 $table->timestamps();
@@ -46,7 +42,7 @@ class ConfigController extends Controller
                 $table->softDeletes();
             }
         );
-        $this->db->connection()->schema()->create(
+        Manager::schema()->create(
             "orders", function ($table) {
                 $table->increments('id');
                 $table->integer("sum");
@@ -61,7 +57,7 @@ class ConfigController extends Controller
                 $table->softDeletes();
             }
         );
-        $this->db->connection()->schema()->create(
+        Manager::schema()->create(
             "items", function ($table) {
                 $table->increments('id');
                 $table->integer("cards_id");
@@ -70,7 +66,7 @@ class ConfigController extends Controller
                 $table->softDeletes();
             }
         );
-        $this->db->connection()->schema()->create(
+        Manager::schema()->create(
             "coupons", function ($table) {
                 $table->increments('id');
                 $table->string("name");
@@ -78,5 +74,24 @@ class ConfigController extends Controller
                 $table->softDeletes();
             }
         );
+        Manager::schema()->create(
+            "faqs", function($table) {
+                $table->increments('id');
+                $table->string("name");
+                $table->string("email");
+                $table->string("phone");
+                $table->string("question");
+                $table->text("answer")->default(null)->nullable();
+                $table->timestamps();
+                $table->softDeletes();
+        });
+        Manager::schema()->create(
+            "categories", function($table) {
+                $table->increments('id');
+                $table->string("name");
+                $table->string("img");
+                $table->timestamps();
+                $table->softDeletes();
+        });
     }
 }
